@@ -1,0 +1,793 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* paleta de colores */
+.paletadecolores{
+    color:
+    #064635
+    #519259
+    #F0BB62
+    #F4EEA9
+}
+
+        /* --- BODY --- */
+
+        body {
+font-family: 'Mukta', sans-serif;
+background-image: url("../imagenes/fondo-maria.jpg");
+background-position: center;
+/* background-attachment es para que la imagen se mueva o quede fija cuando nos movemos por la pagina */
+background-attachment: fixed;
+background-size: cover;
+
+/*para que el footer sea stick necesitamos que el body tenga altura minima (esto es experimental al 21/4)*/
+min-height: 100%;
+flex-wrap: wrap;
+}
+
+
+         /* ---- PARA EL HEADER ----*/
+
+.h1 {
+    background-color: #064635;
+    color: #F4EEA9;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.ul {
+    display: flex;
+    background-color: #519259;
+    list-style: none;
+    width: auto;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.ul a {
+    color: #F0BB62;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+/* a:hover es para cuando pones el puntero arriba del link cambiar la propiedad*/
+.ul a:hover {
+    color: white;
+}
+/* para el nombre de la pagina "WELCOME"*/
+.wel {
+    font-size: 30px;
+    color: black;
+    background-color: #F4EEA9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+        /* ---- PARA EL MAIN ---- */
+
+        /* **** video donde se explica que lo escrito se vaya escondiendo en el contenedor en yt favoritos */
+.sombra {
+    margin: 15px;
+}
+/* para el INDEX y las noticias */
+.sombra article {
+    margin: 0.5rem;
+}
+
+.sombra div {
+    display: flex;
+}
+.sombra h2 {
+    text-decoration: underline 4px;
+    font-size: 2.5rem;
+    /* alguna animacion para ponerle???? */
+}
+.sombra h3 {
+    /* background-color: rgb(81, 146, 89 , 0.7); pasamos a gradiente para ver como queda*/
+    background: linear-gradient(to right, rgb(81, 146, 89), white);
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+.sombra p{
+    color: #000000;
+    margin-bottom: 0 ;
+    text-indent: 1rem; /*para darle sangria*/
+    font-size: 1.5rem;
+    font-weight: 600; /*para que se lea mejor grosor de letra*/
+ } 
+
+ .parrafo-columnas {
+    flex-direction: column;
+    background-color: rgba(244, 238, 169, 0.75);
+} /*  ****    */
+.sombra img {
+    border-radius: 1rem ;
+    border: solid black 2px;
+    width: 400px;
+    height: 300px;
+}
+
+/* boton para ir a enlace externo */
+.button__margin {
+    margin: 40px 20px;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold; /*darle negrita*/
+    padding: 10px 25px;
+    border: 3px solid #064635;
+    background-color: #F0BB62;
+    position: relative;
+}
+.button::before,
+.button::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: inherit;
+        transition: all 0.5s;
+    }
+.button::before {
+        top: -15px;
+        left: -15px;
+        border-width: 3px 0 0 3px;
+
+    }
+.button::after {
+        bottom: -15px;
+        right: -15px;
+        border-width: 0 3px 3px 0;
+
+    }
+.button:hover::before,
+.button:hover::after {
+        width: calc(100% + 27px);
+        height: calc(100% + 27px);
+    }
+
+
+        /* ---- GUIAS DE CULTIVO ---- */
+
+.grid-card {
+    width: auto;
+    margin: 10px;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    }
+.card {
+    width: 300px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    column-gap: 15px;
+    border-radius: 18px;
+    background: rgb(148, 146, 146);
+    box-shadow: 5px 5px 15px rgb(0,0,0,0.9);
+    text-align: center;
+       }
+.card-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    }
+.img1 {
+    background: url(../imagenes/image-guiacard/abono-organico.jpg);
+    background-size: cover;
+}
+
+.img2 {
+    background: url(../imagenes/image-guiacard/ph-ec.jpg);
+    background-size: cover;
+  
+}
+.img3 {
+    background: url(../imagenes/image-guiacard/Defoliation.jpg);
+    background-size: cover;
+}
+
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+.card-text .date {
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
+.card-text p {
+    color: black;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1rem; 
+    margin-top: 0.2rem;
+}
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+.card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background:#519259;
+}
+.card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+.card-stats .type {
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.card-stats .value {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+
+        /* ---- para la galeria ----*/
+.galeria{
+display: grid;
+grid-template-columns:repeat(3 , 1fr);
+column-gap: 1rem;
+row-gap: 1rem;
+justify-content: center;
+justify-items: center;
+
+
+}
+
+.galeria h2 {
+    color:#000000;
+    text-decoration: underline solid black;
+    text-align:center ; /*falta hacer el grid */
+    background-color: #519259;
+    background-size: contain;
+    border-radius: 0.5rem;
+    margin: 1rem;
+
+
+
+
+}
+.galeria img {
+    border-radius: 1rem;
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+}
+
+
+
+/* COMUNIDAD */
+.amigos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: " ele1 ele1 ele1"
+                         " ele2 ele3 ele4";
+    /* border: solid black; */
+    margin: 0 25px ;
+    min-height: 900px;
+}
+.amigos--grow {
+    grid-area: ele1;
+    
+    background-color: #F0BB62;
+    width: 100%;
+    text-align: start;
+    
+    display: flex; /*prueba*/
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    min-height: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+   
+}
+.red-social-comunidad {
+    /* background-color: #519259; */
+    display: flex;
+    flex: auto;
+    justify-content: space-around;
+    padding: 0 15px;
+}
+
+
+/* justify-items horizotalmente
+    align-items verticalmente */
+.red-social-comunidad ul {
+    align-items: center;
+    list-style: none;
+
+}
+.red-social-comunidad a{
+    text-decoration: none;
+    color: #064635;
+    
+}
+.red-social-comunidad p {
+    font-size: 2rem;
+}
+.amigos--grow h3 {
+    font-size: 4rem;
+}
+
+
+.amigos--grow-iframe iframe{
+    
+    width: 500px;
+    height: 100%;
+}     
+
+.comunidad_img1 {
+    background: url(../imagenes/comunidad/growthc.jpg);
+    background-size: cover;
+        border-radius: 15px;
+    box-shadow: 5px 5px 15px rgb(0,0,0,0.9);
+    width: 500px;
+    height: auto;
+
+}
+.comunidad_img1 img{
+    width: 100%;
+    height: 100%;
+    }
+.jamcomunidad {
+    font-size: 3rem;
+}
+
+.amigos--weedword {
+/* a seguir */
+}
+.amigos--elpityseeds {
+/* a seguir */
+
+}
+.amigos--cannabunker{
+/* a seguir */
+}
+
+/* **** CONTACTO **** */
+
+.form-contact{
+    background-color: rgb(81, 146, 89, 0.3);
+    width: 400px;
+    box-shadow: 2px 1px 5px ;
+    padding: 10px;
+    }
+    
+    .contact-img {
+        background: url(../imagenes/contacto/contacto.png);
+        width: 100%;
+        height: 200px;
+        background-size: contain;
+         }
+    .contact label, .contact input, .contact textarea {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+        color: rgb(25, 21, 21);
+        font-weight: 900;
+    }
+    .contact input, .contact textarea{
+        border: none;
+        border-bottom: 2px solid #F0BB62;
+        font-size: 1.5rem;
+        
+    }
+.contacto-text p{
+    font-size: 2.5rem;
+    background-color: #519259;
+}
+
+
+                /* ---- PIE DE PAGINA ---- */
+
+.pie-pagina {
+    width: 100%;
+    background-color: #064635;
+
+}
+
+
+.pie-pagina .grupo1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+.pie-pagina .grupo1 .box {
+    justify-content: center;
+    justify-items: center;
+    width: 300px;
+}
+
+
+.pie-pagina .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem ;
+}
+
+.pie-pagina .grupo1 .box figure img{
+    width: 120px;
+    border-radius: 4rem; /*para que sea cirvular*/
+}
+
+
+/* PIE DE PAGINA */
+/* como el h2 es hijo : toma tanto "sobre nosotros" como "siguenos" */
+.pie-pagina .grupo1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-size: 25px;
+    padding-top: 1rem;
+}
+
+.pie-pagina .grupo1 .box p{
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    line-height: 1.5rem; /*para separacion entre lineas en el textro parrafo*/
+}
+
+.pie-pagina .grupo1 .box .red-social {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.pie-pagina .grupo1 .box .red-social a{
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.red-social span{
+    padding-right: 1rem;
+    line-height: 1.5rem;
+
+}
+.pie-pagina .grupo2 {
+    color: white;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+
+/*para latop */
+
+.amigos {
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    /* border: solid rgb(213, 10, 78); */
+    margin: 0 25px ;
+    min-height: 1000px;
+    }
+.amigos--grow {
+    display: flex;
+    flex-flow: column-reverse wrap;
+}
+
+.red-social-comunidad{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    }
+    .amigos--grow-contacto {
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+    
+.amigos--grow-iframe {
+    height: 100%;
+    border: 0px;
+}
+    .amigos--grow-iframe iframe{
+        width: 100%;
+    }
+
+.amigos--grow h3 {
+    font-size: 3.5rem;
+}
+.comunidad_img1 {
+    width: auto;
+    height: 300px;
+}
+
+.red-social-comunidad p {
+    font-size: 1.5rem;
+}
+.jamcomunidad {
+    font-size: 3.5rem;
+}
+
+
+
+
+}
+
+/* crar una media query max widh 1249px */
+@media screen and (max-width: 1023px) {
+    /*EN TABLET*/
+    body {
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+ 
+/*comunidad*/
+
+.amigos {
+    /* border: solid rgb(36, 184, 29); */
+    margin: 0 25px ;
+}
+.amigos--grow {
+    flex-direction: column;
+    min-height: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.amigos--grow h3 {
+    font-size: 3.5rem;
+}
+.red-social-comunidad p {
+    font-size: 1.2rem;
+}
+ /*para guias*/
+
+ .grid-card {
+    width: auto;
+    margin: 5px;    
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 5px;
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    }
+
+    /* para la galeria */
+
+    .galeria{
+        display: grid;
+        grid-template-columns:repeat(2 , 1fr);
+        /* grid-template-rows: repeat( 5, 1fr);  */ /*en responsive dejamos que las filas se organicen solas*/
+        column-gap: 1rem;
+        row-gap: 1rem;
+
+    }
+    .galeria div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .galeria div img {
+        border-radius: 1rem;
+        width: 320px;    /*para mantener el ratio 4:3 */
+        height: 240px;    /*para mantener el ratio 4:3 */
+
+    }
+/*para contacto*/
+.contacto-text p{
+    font-size: 2rem;
+    
+}
+    
+}
+
+@media screen and (max-width: 767px) {
+    /*EN MOBILE L */
+    /*Barra de nav*/
+
+    .ul {
+        font-size: 1rem;
+    }
+    .sombra h2 {
+        font-size: 1.5rem;
+    }
+    .sombra img {
+        width: 320px;
+        height: 240px;
+
+    }
+    /* comunidad */
+
+    .amigos {
+        flex-flow: column wrap;
+        /* border: solid rgb(10, 210, 213); */
+              
+        }
+    .amigos--grow {
+            flex-direction: column;
+           min-height: 0px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .amigos--grow h3 {
+            font-size: 2.5rem;
+        }
+        .red-social-comunidad p {
+            font-size: 1rem;
+        }
+        .jamcomunidad {
+            font-size: 2rem;
+        }
+    /*para guias*/
+    .grid-card {
+        width: auto;
+        margin: 20px ;    
+        display: grid;
+        grid-template-columns: 1fr ;
+        column-gap: 5px;
+        row-gap: 15px;
+        justify-items: center;
+        align-items: center;
+        }
+
+    /* para la galeria */
+
+    .galeria{
+        display: grid;
+        grid-template-columns:repeat(1 , 1fr);
+        /* grid-template-rows: repeat( 5, 1fr);  */ /*en responsive dejamos que las filas se organicen solas*/
+        column-gap: 1rem;
+        row-gap: 1rem;
+
+    }
+    .galeria div {
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .galeria div img {
+        border-radius: 1rem;
+        width: 320px;    /*para mantener el ratio 4:3 */
+        height: 240px;    /*para mantener el ratio 4:3 */
+
+    }
+    .sombra div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*para contacto*/
+.contacto-text p{
+    font-size: 1rem;
+    
+}
+
+   /*PIE DE PAGINA */
+
+    .pie-pagina .grupo1 .box p{
+        color: white;
+        margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
+        line-height: 1rem; /*para separacion entre lineas en el textro parrafo*/
+        font-size: small;
+    }
+
+    .pie-pagina .grupo1 .box .red-social {
+        list-style: none;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 424px) {
+/*para celulares s y m */
+.ul a {
+    font-size: 0.9rem;
+    margin: 0.5rem;
+
+}
+
+.sombra {
+    margin: 10px;
+}
+
+.sombra p{
+    line-height: 1.5rem;
+
+}
+.sombra img {
+        width: 290px;
+        height: 230px;
+
+}
+.sombra h3 {
+  line-height: 2rem;
+}
+
+/* comunidad */
+.jamcomunidad {
+    font-size: 1.5rem;
+}
+
+/*para contacto*/
+.form-contact{
+    width: 300px;
+    }
+    
+    .contact-img {
+        background: url(../imagenes/contacto/contacto.png);
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+         }  
+
+    /*PIE DE PAGINA */
+
+.pie-pagina .grupo1 .box p{
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-left: 0rem;
+    line-height: 1rem; /*para separacion entre lineas en el textro parrafo*/
+    font-size: small;
+    
+}
+
+.pie-pagina .grupo1 .box .red-social {
+    list-style: none;
+    margin-left: 0.5rem;
+}
+
+.pie-pagina .grupo1 .box .red-social a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+
+}
+.red-social span{
+    padding-right: 0.2rem;
+    line-height: 1rem;
+
+}
+/* como el h2 es hijo : toma tanto "sobre nosotros" como "siguenos" */
+.pie-pagina .grupo1 .box h2 {
+    color: white;
+    width: 92px;
+    height: 52px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
+
+
+}
