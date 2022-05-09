@@ -51,6 +51,7 @@ flex-wrap: wrap;
     color: #F0BB62;
     text-decoration: none;
     margin: 1rem;
+    font-size: 1.5rem;
 }
 
 /* a:hover es para cuando pones el puntero arriba del link cambiar la propiedad*/
@@ -73,6 +74,20 @@ flex-wrap: wrap;
         /* **** video donde se explica que lo escrito se vaya escondiendo en el contenedor en yt favoritos */
 .sombra {
     margin: 15px;
+    }
+.efecto1 {
+    position: relative;
+    display: block;
+    padding: 15px 20px;
+    font-size: 2rem;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+.efecto1:hover {
+    background: #519259;
+    box-shadow: 0 0 10px #519259, 0 0 30px #064635;
+    text-decoration: underline;
 }
 /* para el INDEX y las noticias */
 .sombra article {
@@ -83,8 +98,7 @@ flex-wrap: wrap;
     display: flex;
 }
 .sombra h2 {
-    text-decoration: underline 4px;
-    font-size: 2.5rem;
+    
     /* alguna animacion para ponerle???? */
 }
 .sombra h3 {
@@ -92,6 +106,11 @@ flex-wrap: wrap;
     background: linear-gradient(to right, rgb(81, 146, 89), white);
     font-size: 1.7rem;
     margin-bottom: 0.5rem;
+}
+.sombra h3:hover {
+    box-shadow: 0 0 10px #519259, 0 0 30px #064635;
+    background: #519259;
+    color: #F4EEA9;
 }
 .sombra p{
     color: #000000;
@@ -268,11 +287,8 @@ justify-items: center;
     background-size: contain;
     border-radius: 0.5rem;
     margin: 1rem;
-
-
-
-
 }
+
 .galeria img {
     border-radius: 1rem;
     width: 400px;
@@ -283,6 +299,10 @@ justify-items: center;
 
 
 /* COMUNIDAD */
+.link1:hover{
+    color: white;
+}
+
 .amigos {
     display: grid;
     gap: 20px;
@@ -472,6 +492,11 @@ justify-items: center;
 
 
 }
+.pie-pagina .grupo1 .box .red-social a:hover{
+    box-shadow: 0 0 15px white;
+    background-color: #F4EEA9;
+    color: #064635;
+}
 
 .red-social span{
     padding-right: 1rem;
@@ -543,11 +568,14 @@ justify-items: center;
 /* crar una media query max widh 1249px */
 @media screen and (max-width: 1023px) {
     /*EN TABLET*/
-    body {
+body {
     min-height: 100vh;
     flex-wrap: wrap;
 }
- 
+.ul a {
+    font-size: 1rem;
+}
+
 /*comunidad*/
 
 .amigos {
