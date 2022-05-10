@@ -311,7 +311,22 @@ justify-items: center;
     height: 300px;
     max-width: 100%;
 }
-
+.rotate-scale-up {
+	animation: rotate-scale-up 0.7s linear both;
+}
+@keyframes rotate-scale-up {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(0.7) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+  }
+  
+      
 
 
 /* COMUNIDAD */
