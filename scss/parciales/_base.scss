@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* paleta de colores */
+  .paletadecolores {
+    color: #064635
+   #519259
+   #F0BB62
+   #F4EEA9;
+  }
+  
+  /* --- BODY --- */
+  body {
+    font-family: 'Mukta', sans-serif !important;
+    background-image: url("../imagenes/fondo-maria.jpg");
+    background-position: center;
+    /* background-attachment es para que la imagen se mueva o quede fija cuando nos movemos por la pagina */
+    background-attachment: fixed;
+    background-size: cover;
+    /*para que el footer sea stick necesitamos que el body tenga altura minima (esto es experimental al 21/4)*/
+    min-height: 100%;
+    flex-wrap: wrap;
+  }
