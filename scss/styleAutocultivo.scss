@@ -303,31 +303,10 @@ flex-wrap: wrap;
       opacity: 1;
     }
     }
-  
+    
+      
         /* ---- para la galeria ----*/
 
-
-/* .galeria{
-display: grid;
-grid-template-columns:repeat(3 , 1fr);
-column-gap: 1rem;
-row-gap: 1rem;
-justify-content: center;
-justify-items: center;
-
-
-} */
-
-/* .modalTitulo{
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    background-color: rgb(0, 0, 0 , 0.7);
-    font-size: 2rem;
-    text-align: center;
-} */
 .modalTitulo{
     position: absolute;
     top: 100%;
@@ -337,40 +316,44 @@ justify-items: center;
     font-size: 2rem;
     text-align: center;
 }
-
-
-
-
 .galeria h2 {
     color:#000000;
-    text-decoration: underline solid black;
+    text-decoration:none;
     text-align:center ; 
-    background-color: #519259;
     background-size: contain;
     border-radius: 0.5rem;
     margin: 1rem;
 }
+.galeria div h2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0 , 0.5);
+    color: white;
+}
 
-/* .galeria img {
-    border-radius: 1rem;
-    width: 400px;
-    height: 300px;
-    max-width: 100%;
-} */
 
 .galeria {
     max-width: 100%;
     --bs-gutter-x:0 !important;
     margin-bottom: 1.5rem;
 }
-.galeria div img {
-    border-radius: 1rem;
-    width: 400px;
-    height: 300px;
-}
-.galeria div img:hover {
-    opacity: 0.5;
-}
+    .galeria div {
+        overflow: hidden;
+    }
+        .galeria div img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border: 3px solid #F4EEA9;
+            
+            }
+            .galeria div img:hover {
+            transition: 2s;
+            transform: scale(1.2);
+            opacity: 0.5;
+            }
 
 /* COMUNIDAD */
 .link1:hover{
@@ -383,17 +366,15 @@ justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: " ele1 ele1 ele1"
                          " ele2 ele3 ele4";
-    /* border: solid black; */
-    margin: 0 25px ;
-    min-height: 900px;
+    margin: 15px 25px ;
+    min-height: 900px;    
 }
 .amigos--grow {
-    grid-area: ele1;
-    
+    grid-area: ele1;   
+    margin-top: 15px; 
     background-color: #F0BB62;
     width: 100%;
-    text-align: start;
-    
+    text-align: start;    
     display: flex; 
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -450,18 +431,30 @@ justify-items: center;
     height: 100%;
     }
 .jamcomunidad {
-    font-size: 3rem;
+    font-size: 3rem;   
+    list-style: none;    
 }
+    .jamcomunidad a {
+        text-decoration: none;        
+        color: #064635;
+    }
 
 .amigos--weedword {
-/* a seguir */
+    background-image: url(../imagenes/comunidad/weedwordlogo_auto_x2.jpg);
+    background-size: cover;
+    border-radius: 15px;
 }
-.amigos--elpityseeds {
-/* a seguir */
 
+.amigos--elpityseeds {
+    background-image: url(../imagenes/comunidad/pityseedslogo.png);
+    background-size: cover;
+    border-radius: 15px;
+    border-radius: 15px;
 }
 .amigos--cannabunker{
-/* a seguir */
+    background-image: url(../imagenes/comunidad/cannabunkerlogo.png);
+    background-size: cover;
+    border-radius: 15px;
 }
 
 /* **** CONTACTO **** */
@@ -589,17 +582,25 @@ justify-items: center;
 
 .amigos {
     display: flex;
-    gap: 20px;
     flex-flow: row wrap;
-    /* border: solid rgb(213, 10, 78); */
-    margin: 0 25px ;
-    min-height: 1000px;
+    justify-content:flex-start;
+    gap: 15px;
+    
     }
-.amigos--grow {
+    .amigos--grow {
     display: flex;
     flex-flow: column-reverse wrap;
-}
-
+    }
+    .amigos--weedword {
+        width: 100%;
+    }
+    .amigos--elpityseeds {
+        width: 100%;
+    }
+    .amigos--cannabunker{
+        width: 100%;
+        margin-bottom: 15px;
+    }
 .red-social-comunidad{
     display: flex;
     flex-flow: column;
@@ -609,7 +610,6 @@ justify-items: center;
     .amigos--grow-contacto {
         display: flex;
         flex-flow: row wrap;
-
     }
     
 .amigos--grow-iframe {
@@ -692,11 +692,7 @@ body {
     /* para la galeria */
 
     
-    .galeria div img {
-        width: 320px;    /*para mantener el ratio 4:3 */
-        height: 240px;    /*para mantener el ratio 4:3 */
-
-    }
+  
 /*para contacto*/
 .contacto-text p{
     font-size: 2rem;
@@ -763,9 +759,7 @@ body {
     
     
     .galeria div img {
-        border-radius: 1rem;
-        width: 300px;    /*para mantener el ratio 4:3 */
-        height: 220px;    /*para mantener el ratio 4:3 */
+         height: 220px;    /*para mantener el ratio 4:3 */
 
     }
     .sombra div {
