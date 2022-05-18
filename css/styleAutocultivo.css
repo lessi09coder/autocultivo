@@ -12,7 +12,7 @@
 /* --- BODY --- */
 body {
   font-family: 'Mukta', sans-serif !important;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../imagenes/fondomaria2.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../imagenes/fondomaria2.jpg);
   background-position: center;
   /* background-attachment es para que la imagen se mueva o quede fija cuando nos movemos por la pagina */
   background-attachment: fixed;
@@ -66,8 +66,84 @@ body {
   align-items: center;
 }
 
-/* ---- PARA EL MAIN ---- */
-/* **** video donde se explica que lo escrito se vaya escondiendo en el contenedor en yt favoritos */
+/* ---- PIE DE PAGINA ---- */
+.pie-pagina {
+  width: 100%;
+  background-color: #064635;
+}
+
+.pie-pagina .grupo1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.pie-pagina .grupo1 .box {
+  justify-content: center;
+  justify-items: center;
+  width: 300px;
+}
+
+.pie-pagina .grupo1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+}
+
+.pie-pagina .grupo1 .box figure img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+/* PIE DE PAGINA */
+/* como el h2 es hijo : toma tanto "sobre nosotros" como "siguenos" */
+.pie-pagina .grupo1 .box h2 {
+  color: white;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  font-size: 25px;
+  padding-top: 1rem;
+}
+
+.pie-pagina .grupo1 .box p {
+  color: white;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  line-height: 1.5rem;
+  /*para separacion entre lineas en el textro parrafo*/
+}
+
+.pie-pagina .grupo1 .box .red-social {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+.pie-pagina .grupo1 .box .red-social a {
+  text-decoration: none;
+  color: white;
+}
+
+.pie-pagina .grupo1 .box .red-social a:hover {
+  box-shadow: 0 0 15px white;
+  background-color: #F4EEA9;
+  color: #064635;
+}
+
+.red-social span {
+  padding-right: 1rem;
+  line-height: 1.5rem;
+}
+
+.pie-pagina .grupo2 {
+  color: white;
+  margin-top: 2px;
+}
+
+/* ---- INDEX ---- */
 .sombra {
   margin: 15px;
 }
@@ -78,7 +154,7 @@ body {
 }
 
 .efecto1:hover {
-  box-shadow: 0 0 10px #519259, 0 0 30px #064635;
+  box-shadow: 0 0 10px #900cb1, 0 0 30px #310346;
   text-decoration: underline;
 }
 
@@ -88,8 +164,8 @@ body {
 }
 
 /* .sombra div {
-    display: flex;
-} */
+        display: flex;
+    } */
 .sombra h3 {
   /* background-color: rgb(81, 146, 89 , 0.7); pasamos a gradiente para ver como queda*/
   background: linear-gradient(to right, #519259, white);
@@ -115,9 +191,9 @@ body {
 }
 
 /* .parrafo-columnas {
-    flex-direction: column;
-    
-}  */
+        flex-direction: column;
+        
+    }  */
 /*  ****    */
 .sombra img {
   border-radius: 1rem;
@@ -349,6 +425,48 @@ body {
   opacity: 0.5;
 }
 
+/* **** CONTACTO **** */
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-contact {
+  background-color: rgba(139, 36, 170, 0.9);
+  width: 400px;
+  box-shadow: 2px 1px 5px;
+  padding: 10px;
+}
+
+.contact-img {
+  background: url(../imagenes/contacto/contacto.png);
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  border-radius: 30px;
+}
+
+.contact label, .contact input, .contact textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: white;
+  font-weight: 900;
+}
+
+.contact input, .contact textarea {
+  border: none;
+  border-bottom: 2px solid #000000;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.contacto-text p {
+  font-size: 2.5rem;
+  background-color: #519259;
+}
+
 /* COMUNIDAD */
 .link1:hover {
   color: white;
@@ -437,138 +555,25 @@ body {
 .amigos--weedword {
   background-image: url(../imagenes/comunidad/weedwordlogo_auto_x2.jpg);
   background-size: cover;
+  background-position: center;
   border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
 .amigos--elpityseeds {
   background-image: url(../imagenes/comunidad/pityseedslogo.png);
   background-size: cover;
+  background-position: center;
   border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
 .amigos--cannabunker {
   background-image: url(../imagenes/comunidad/cannabunkerlogo.png);
   background-size: cover;
+  background-position: center;
   border-radius: 15px;
-}
-
-/* **** CONTACTO **** */
-.form {
-  display: flex;
-  justify-content: center;
-}
-
-.form-contact {
-  background-color: rgba(139, 36, 170, 0.9);
-  width: 400px;
-  box-shadow: 2px 1px 5px;
-  padding: 10px;
-}
-
-.contact-img {
-  background: url(../imagenes/contacto/contacto.png);
-  width: 100%;
-  height: 200px;
-  background-size: contain;
-  border-radius: 30px;
-}
-
-.contact label, .contact input, .contact textarea {
-  display: block;
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 5px;
-  color: white;
-  font-weight: 900;
-}
-
-.contact input, .contact textarea {
-  border: none;
-  border-bottom: 2px solid #000000;
-  font-size: 1.5rem;
-  color: #000000;
-}
-
-.contacto-text p {
-  font-size: 2.5rem;
-  background-color: #519259;
-}
-
-/* ---- PIE DE PAGINA ---- */
-.pie-pagina {
-  width: 100%;
-  background-color: #064635;
-}
-
-.pie-pagina .grupo1 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-self: flex-end;
-}
-
-.pie-pagina .grupo1 .box {
-  justify-content: center;
-  justify-items: center;
-  width: 300px;
-}
-
-.pie-pagina .grupo1 .box figure {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 5px;
-}
-
-.pie-pagina .grupo1 .box figure img {
-  width: 120px;
-  border-radius: 50%;
-}
-
-/* PIE DE PAGINA */
-/* como el h2 es hijo : toma tanto "sobre nosotros" como "siguenos" */
-.pie-pagina .grupo1 .box h2 {
-  color: white;
-  margin-bottom: 25px;
-  margin-left: 15px;
-  font-size: 25px;
-  padding-top: 1rem;
-}
-
-.pie-pagina .grupo1 .box p {
-  color: white;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  line-height: 1.5rem;
-  /*para separacion entre lineas en el textro parrafo*/
-}
-
-.pie-pagina .grupo1 .box .red-social {
-  list-style: none;
-  margin-left: 1rem;
-}
-
-.pie-pagina .grupo1 .box .red-social a {
-  text-decoration: none;
-  color: white;
-}
-
-.pie-pagina .grupo1 .box .red-social a:hover {
-  box-shadow: 0 0 15px white;
-  background-color: #F4EEA9;
-  color: #064635;
-}
-
-.red-social span {
-  padding-right: 1rem;
-  line-height: 1.5rem;
-}
-
-.pie-pagina .grupo2 {
-  color: white;
-  margin-top: 2px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (max-width: 1200px) {

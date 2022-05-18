@@ -1,0 +1,302 @@
+ 
+
+@media screen and (max-width: 1200px) {
+
+    /*para latop */
+    
+    .amigos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:flex-start;
+        gap: 15px;
+        
+        }
+        .amigos--grow {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        }
+        .amigos--weedword {
+            width: 100%;
+        }
+        .amigos--elpityseeds {
+            width: 100%;
+        }
+        .amigos--cannabunker{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    .red-social-comunidad{
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+        justify-content: center;
+        }
+        .amigos--grow-contacto {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+    .amigos--grow-iframe {
+        height: 100%;
+        border: 0px;
+    }
+        .amigos--grow-iframe iframe{
+            width: 100%;
+        }
+    
+    .amigos--grow h3 {
+        font-size: 3.5rem;
+    }
+    .comunidad_img1 {
+        width: auto;
+        height: 300px;
+    }
+    
+    .red-social-comunidad p {
+        font-size: 1.5rem;
+    }
+    .jamcomunidad {
+        font-size: 3.5rem;
+    }
+    
+    
+    
+    
+    }
+    
+    /* crar una media query max widh 1249px */
+    
+    @media screen and (max-width: 1023px) {
+        /*EN TABLET*/
+    body {
+        min-height: 100vh;
+        flex-wrap: wrap;
+    }
+    .ul a {
+        font-size: 1rem;
+    }
+    
+    .sombra img {
+        width: 100%;
+        height: 240px;
+        margin-bottom: 1rem;
+    }
+    
+    /*comunidad*/
+    
+    .amigos {
+        /* border: solid rgb(36, 184, 29); */
+        margin: 0 25px ;
+    }
+    .amigos--grow {
+        flex-direction: column;
+        min-height: 0px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .amigos--grow h3 {
+        font-size: 3.5rem;
+    }
+    .red-social-comunidad p {
+        font-size: 1.2rem;
+    }
+     /*para guias*/
+    
+     .grid-card {
+        width: auto;
+        margin: 5px;    
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 5px;
+        row-gap: 15px;
+        justify-items: center;
+        align-items: center;
+        }
+    
+        /* para la galeria */
+    
+        
+      
+    /*para contacto*/
+    .contacto-text p{
+        font-size: 2rem;
+        
+    }
+        
+    }
+    
+    @media screen and (max-width: 767px) {
+        /*EN MOBILE L */
+        /*Barra de nav*/
+    
+        .ul {
+            font-size: 1rem;
+            margin: 0;
+            
+        }
+        
+        .sombra h2 {
+            font-size: 1.5rem;
+        }
+        .sombra img {
+            width: 100%;
+            height: 240px;
+            margin-bottom: 1rem;
+    
+        }
+        /* comunidad */
+    
+        .amigos {
+            flex-flow: column wrap;
+            /* border: solid rgb(10, 210, 213); */
+                  
+            }
+        .amigos--grow {
+                flex-direction: column;
+               min-height: 0px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+            .amigos--grow h3 {
+                font-size: 2.5rem;
+            }
+            .red-social-comunidad p {
+                font-size: 1rem;
+            }
+            .jamcomunidad {
+                font-size: 2rem;
+            }
+        /*para guias*/
+        .grid-card {
+            width: auto;
+            margin: 20px ;    
+            display: grid;
+            grid-template-columns: 1fr ;
+            column-gap: 5px;
+            row-gap: 15px;
+            justify-items: center;
+            align-items: center;
+            }
+    
+        /* para la galeria */
+    
+        
+        
+        .galeria div img {
+             height: 220px;    /*para mantener el ratio 4:3 */
+    
+        }
+        .sombra div {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        /*para contacto*/
+    .contacto-text p{
+        font-size: 1rem;
+        
+    }
+    
+       /*PIE DE PAGINA */
+    
+        .pie-pagina .grupo1 .box p{
+            color: white;
+            margin-bottom: 0.5rem;
+            margin-left: 0.5rem;
+            line-height: 1rem; /*para separacion entre lineas en el textro parrafo*/
+            font-size: small;
+        }
+    
+        .pie-pagina .grupo1 .box .red-social {
+            list-style: none;
+            margin-left: 1rem;
+        }
+    }
+    
+    @media screen and (max-width: 424px) {
+    /*para celulares s y m */
+    .ul a {
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    
+    }
+    
+    .sombra {
+        margin: 10px;
+    }
+    
+    .sombra p{
+        line-height: 1.5rem;
+        font-size: 1rem;
+    
+    }
+    .sombra img {
+            width: 100%;
+            height: 230px;
+    
+    }
+    .sombra h3 {
+      line-height: 2rem;
+    }
+    .button {
+        padding: 5px 5px;
+    }
+    /* para indice */
+    
+    /* comunidad */
+    .jamcomunidad {
+        font-size: 1.5rem;
+    }
+    
+    /*para contacto*/
+    .form-contact{
+        width: 300px;
+        }
+        
+        .contact-img {
+            background: url(../imagenes/contacto/contacto.png);
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+             }  
+    
+        /*PIE DE PAGINA */
+    
+    .pie-pagina .grupo1 .box p{
+        color: white;
+        margin-bottom: 0.5rem;
+        margin-left: 0rem;
+        line-height: 1rem; /*para separacion entre lineas en el textro parrafo*/
+        font-size: small;
+        
+    }
+    
+    .pie-pagina .grupo1 .box .red-social {
+        list-style: none;
+        margin-left: 0.5rem;
+    }
+    
+    .pie-pagina .grupo1 .box .red-social a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    
+    }
+    .red-social span{
+        padding-right: 0.2rem;
+        line-height: 1rem;
+    
+    }
+    /* como el h2 es hijo : toma tanto "sobre nosotros" como "siguenos" */
+    .pie-pagina .grupo1 .box h2 {
+        color: white;
+        width: 92px;
+        height: 52px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        font-size: 0.8rem;
+        padding-top: 1rem;
+    }
+    
+    
+    }

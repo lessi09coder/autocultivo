@@ -1,0 +1,103 @@
+/* COMUNIDAD */
+.link1:hover{
+    color: white;
+}
+
+.amigos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: " ele1 ele1 ele1"
+                         " ele2 ele3 ele4";
+    margin: 15px 25px ;
+    min-height: 900px;    
+}
+.amigos--grow {
+    grid-area: ele1;   
+    margin-top: 15px; 
+    background-color: #F0BB62;
+    width: 100%;
+    text-align: start;    
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    min-height: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+   
+}
+.red-social-comunidad {
+    /* background-color: #519259; */
+    display: flex;
+    flex: auto;
+    justify-content: space-around;
+    padding: 0 15px;
+}
+
+
+/* justify-items horizotalmente
+    align-items verticalmente */
+.red-social-comunidad ul {
+    align-items: center;
+    list-style: none;
+
+}
+.red-social-comunidad a{
+    text-decoration: none;
+    color: #064635;
+}
+.red-social-comunidad p {
+    font-size: 2rem;
+}
+.amigos--grow h3 {
+    font-size: 4rem;
+}
+.amigos--grow-iframe iframe{
+    width: 500px;
+    height: 100%;
+}     
+
+.comunidad_img1 {
+    background: url(../imagenes/comunidad/growthc.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    width: 500px;
+    height: auto;
+}
+.comunidad_img1 img{
+    width: 100%;
+    height: 100%;
+    }
+.jamcomunidad {
+    font-size: 3rem;   
+    list-style: none;    
+}
+    .jamcomunidad a {
+        text-decoration: none;        
+        color: #064635;
+    }
+
+.amigos--weedword {
+    background-image: url(../imagenes/comunidad/weedwordlogo_auto_x2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+.amigos--elpityseeds {
+    background-image: url(../imagenes/comunidad/pityseedslogo.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9); 
+}
+    
+.amigos--cannabunker{
+    background-image: url(../imagenes/comunidad/cannabunkerlogo.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
