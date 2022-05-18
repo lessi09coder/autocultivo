@@ -12,7 +12,7 @@
 /* --- BODY --- */
 body {
   font-family: 'Mukta', sans-serif !important;
-  background-image: url("../imagenes/fondo-maria.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../imagenes/fondomaria2.jpg);
   background-position: center;
   /* background-attachment es para que la imagen se mueva o quede fija cuando nos movemos por la pagina */
   background-attachment: fixed;
@@ -72,17 +72,12 @@ body {
   margin: 15px;
 }
 
-/* .efecto1 {
-    position: relative;
-    display: block;
-    padding: 15px 20px;
-    font-size: 2rem;
-    overflow: hidden;
-    transition: 0.5s;
-    
-} */
+.efecto1 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .efecto1:hover {
-  background: #519259;
   box-shadow: 0 0 10px #519259, 0 0 30px #064635;
   text-decoration: underline;
 }
@@ -95,10 +90,6 @@ body {
 /* .sombra div {
     display: flex;
 } */
-.sombra h2 {
-  /* alguna animacion para ponerle???? */
-}
-
 .sombra h3 {
   /* background-color: rgb(81, 146, 89 , 0.7); pasamos a gradiente para ver como queda*/
   background: linear-gradient(to right, #519259, white);
@@ -453,7 +444,6 @@ body {
   background-image: url(../imagenes/comunidad/pityseedslogo.png);
   background-size: cover;
   border-radius: 15px;
-  border-radius: 15px;
 }
 
 .amigos--cannabunker {
@@ -469,7 +459,7 @@ body {
 }
 
 .form-contact {
-  background-color: rgba(81, 146, 89, 0.3);
+  background-color: rgba(139, 36, 170, 0.9);
   width: 400px;
   box-shadow: 2px 1px 5px;
   padding: 10px;
@@ -480,6 +470,7 @@ body {
   width: 100%;
   height: 200px;
   background-size: contain;
+  border-radius: 30px;
 }
 
 .contact label, .contact input, .contact textarea {
@@ -487,14 +478,15 @@ body {
   width: 100%;
   padding: 5px;
   margin-bottom: 5px;
-  color: #191515;
+  color: white;
   font-weight: 900;
 }
 
 .contact input, .contact textarea {
   border: none;
-  border-bottom: 2px solid #F0BB62;
+  border-bottom: 2px solid #000000;
   font-size: 1.5rem;
+  color: #000000;
 }
 
 .contacto-text p {

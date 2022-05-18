@@ -24,8 +24,9 @@
 
         body {
 font-family: 'Mukta', sans-serif !important ; 
-background-image: url("../imagenes/fondo-maria.jpg");
+background: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255,.2)), url(../imagenes/fondomaria2.jpg);
 background-position: center;
+
 /* background-attachment es para que la imagen se mueva o quede fija cuando nos movemos por la pagina */
 background-attachment: fixed;
 background-size: cover;
@@ -86,19 +87,13 @@ flex-wrap: wrap;
 .sombra {
     margin: 15px;
     }
-/* .efecto1 {
-    position: relative;
-    display: block;
-    padding: 15px 20px;
-    font-size: 2rem;
-    overflow: hidden;
-    transition: 0.5s;
-    
-} */
+.efecto1 {
+    color: white; 
+    background-color: rgba(0, 0, 0 , 0.5);    
+} 
 .efecto1:hover {
-    background: #519259;
-    box-shadow: 0 0 10px #519259, 0 0 30px #064635;
-    text-decoration: underline;
+   box-shadow: 0 0 10px #519259, 0 0 30px #064635;
+   text-decoration: underline;
 }
 /* para el INDEX y las noticias */
 .sombra article {
@@ -108,10 +103,7 @@ flex-wrap: wrap;
 /* .sombra div {
     display: flex;
 } */
-.sombra h2 {
-    
-    /* alguna animacion para ponerle???? */
-}
+
 .sombra h3 {
     /* background-color: rgb(81, 146, 89 , 0.7); pasamos a gradiente para ver como queda*/
     background: linear-gradient(to right, rgb(81, 146, 89), white);
@@ -402,7 +394,6 @@ flex-wrap: wrap;
 .red-social-comunidad a{
     text-decoration: none;
     color: #064635;
-    
 }
 .red-social-comunidad p {
     font-size: 2rem;
@@ -410,8 +401,6 @@ flex-wrap: wrap;
 .amigos--grow h3 {
     font-size: 4rem;
 }
-
-
 .amigos--grow-iframe iframe{
     width: 500px;
     height: 100%;
@@ -424,7 +413,6 @@ flex-wrap: wrap;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     width: 500px;
     height: auto;
-
 }
 .comunidad_img1 img{
     width: 100%;
@@ -448,9 +436,9 @@ flex-wrap: wrap;
 .amigos--elpityseeds {
     background-image: url(../imagenes/comunidad/pityseedslogo.png);
     background-size: cover;
-    border-radius: 15px;
-    border-radius: 15px;
+    border-radius: 15px;    
 }
+    
 .amigos--cannabunker{
     background-image: url(../imagenes/comunidad/cannabunkerlogo.png);
     background-size: cover;
@@ -463,7 +451,7 @@ flex-wrap: wrap;
     justify-content: center;
 }
 .form-contact{
-    background-color: rgba(81, 146, 89, 0.3);
+    background-color: rgba(139, 36, 170, 0.9);
     width: 400px;
     box-shadow: 2px 1px 5px ;
     padding: 10px;
@@ -474,19 +462,21 @@ flex-wrap: wrap;
         width: 100%;
         height: 200px;
         background-size: contain;
+        border-radius: 30px;
          }
     .contact label, .contact input, .contact textarea {
         display: block;
         width: 100%;
         padding: 5px;
         margin-bottom: 5px;
-        color: rgb(25, 21, 21);
+        color: white;
         font-weight: 900;
     }
     .contact input, .contact textarea{
         border: none;
-        border-bottom: 2px solid #F0BB62;
+        border-bottom: 2px solid #000000;
         font-size: 1.5rem;
+        color: #000000;
         
     }
 .contacto-text p{
