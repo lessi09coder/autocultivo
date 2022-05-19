@@ -1,51 +1,51 @@
      
         /* ---- para la galeria ----*/
 
-        .modalTitulo{
-            position: absolute;
-            top: 100%;
-            color: white;
-            display: block;
-            background-color: rgba(0, 0, 0 , 0.7);
-            font-size: 2rem;
-            text-align: center;
-        }
-        .galeria h2 {
-            color:#000000;
-            text-decoration:none;
-            text-align:center ; 
-            background-size: contain;
-            border-radius: 0.5rem;
-            margin: 1rem;
-        }
-        .galeria div h2 {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translate(-50%);
-            background-color: rgba(0, 0, 0 , 0.5);
-            color: white;
-        }
+
+.galeria {
+    max-width: 100%;
+    --bs-gutter-x:0 !important;
+    margin-bottom: 1.5rem; 
+    h2 {
+        color:#000000;
+        text-decoration:none;
+        text-align:center ; 
+        background-size: contain;
+        border-radius: 0.5rem;
+        margin: 1rem;
+    }
+    div {
+        overflow: hidden;          
+    }
+    div h2 {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: rgba(0, 0, 0 , 0.5);
+        color: white;
+    }
+    div img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border: 3px solid #F4EEA9;
         
-        
-        .galeria {
-            max-width: 100%;
-            --bs-gutter-x:0 !important;
-            margin-bottom: 1.5rem;
+        &:hover{
+            transition: 2s;
+            transform: scale(1.2);
+            opacity: 0.5;
         }
-            .galeria div {
-                overflow: hidden;
-            }
-                .galeria div img{
-                    width: 100%;
-                    height: 300px;
-                    object-fit: cover;
-                    border: 3px solid #F4EEA9;
-                    
-                    }
-                    .galeria div img:hover {
-                    transition: 2s;
-                    transform: scale(1.2);
-                    opacity: 0.5;
-                    }
-        
+    }
+}
+         
+                
+.modalTitulo{
+    position: absolute;
+    top: 100%;
+    color: white;
+    display: block;
+    background-color: rgba(0, 0, 0 , 0.7);
+    font-size: 2rem;
+    text-align: center;            
+}

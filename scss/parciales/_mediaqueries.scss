@@ -9,44 +9,36 @@
         flex-flow: row wrap;
         justify-content:flex-start;
         gap: 15px;
-        
+
+        &--grow{
+            display: flex;
+            flex-flow: column-reverse wrap;
+
+            h3{
+                font-size: 3.5rem;
+            }
+            &-contacto{
+                display: flex;
+                flex-flow: row wrap;
+            }
+            &-iframe{
+                height: 100%;
+                border: 0px;
+
+                iframe{
+                    width: 100%;
+                }
+            }
         }
-        .amigos--grow {
-        display: flex;
-        flex-flow: column-reverse wrap;
-        }
-        .amigos--weedword {
+        &--weedword, &--elpityseeds, &--cannabunker{
             width: 100%;
         }
-        .amigos--elpityseeds {
-            width: 100%;
-        }
-        .amigos--cannabunker{
-            width: 100%;
+        &--cannabumker{
             margin-bottom: 15px;
         }
-    .red-social-comunidad{
-        display: flex;
-        flex-flow: column;
-        align-content: center;
-        justify-content: center;
-        }
-        .amigos--grow-contacto {
-            display: flex;
-            flex-flow: row wrap;
+        
         }
         
-    .amigos--grow-iframe {
-        height: 100%;
-        border: 0px;
-    }
-        .amigos--grow-iframe iframe{
-            width: 100%;
-        }
-    
-    .amigos--grow h3 {
-        font-size: 3.5rem;
-    }
     .comunidad_img1 {
         width: auto;
         height: 300px;
@@ -58,10 +50,12 @@
     .jamcomunidad {
         font-size: 3.5rem;
     }
-    
-    
-    
-    
+    .red-social-comunidad{
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+        justify-content: center;
+        }
     }
     
     /* crar una media query max widh 1249px */
@@ -87,16 +81,19 @@
     .amigos {
         /* border: solid rgb(36, 184, 29); */
         margin: 0 25px ;
+
+        &--grow {
+            flex-direction: column;
+            min-height: 0px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            h3{
+                font-size: 3.5rem;
+            }
+        }
     }
-    .amigos--grow {
-        flex-direction: column;
-        min-height: 0px;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
-    .amigos--grow h3 {
-        font-size: 3.5rem;
-    }
+    
     .red-social-comunidad p {
         font-size: 1.2rem;
     }
@@ -119,8 +116,7 @@
       
     /*para contacto*/
     .contacto-text p{
-        font-size: 2rem;
-        
+        font-size: 2rem;        
     }
         
     }
@@ -134,39 +130,43 @@
             margin: 0;
             
         }
-        
-        .sombra h2 {
-            font-size: 1.5rem;
+        .sombra{
+            h2{
+                font-size: 1.5rem;
+            }
+            img{
+                width: 100%;
+                height: 240px;
+                margin-bottom: 1rem;
+            }
         }
-        .sombra img {
-            width: 100%;
-            height: 240px;
-            margin-bottom: 1rem;
-    
-        }
+       
         /* comunidad */
     
         .amigos {
             flex-flow: column wrap;
-            /* border: solid rgb(10, 210, 213); */
-                  
-            }
-        .amigos--grow {
+            
+            &--grow{
                 flex-direction: column;
-               min-height: 0px;
+                min-height: 0px;
                 border-top-right-radius: 15px;
                 border-bottom-right-radius: 15px;
+
+                h3{
+                    font-size: 2.5rem;
+                }
             }
-            .amigos--grow h3 {
-                font-size: 2.5rem;
             }
+       
             .red-social-comunidad p {
                 font-size: 1rem;
             }
             .jamcomunidad {
                 font-size: 2rem;
             }
+
         /*para guias*/
+
         .grid-card {
             width: auto;
             margin: 20px ;    
@@ -205,12 +205,12 @@
             margin-left: 0.5rem;
             line-height: 1rem; /*para separacion entre lineas en el textro parrafo*/
             font-size: small;
-        }
-    
-        .pie-pagina .grupo1 .box .red-social {
-            list-style: none;
-            margin-left: 1rem;
-        }
+
+            red-social{
+                list-style: none;
+                margin-left: 1rem;
+            }
+        }      
     }
     
     @media screen and (max-width: 424px) {
@@ -223,24 +223,24 @@
     
     .sombra {
         margin: 10px;
-    }
-    
-    .sombra p{
-        line-height: 1.5rem;
-        font-size: 1rem;
-    
-    }
-    .sombra img {
+
+        p{
+            line-height: 1.5rem;
+            font-size: 1rem;
+        }
+        img{
             width: 100%;
             height: 230px;
+        }
+        h3{
+            line-height: 2rem;
+        }
+    }
     
-    }
-    .sombra h3 {
-      line-height: 2rem;
-    }
     .button {
         padding: 5px 5px;
     }
+   
     /* para indice */
     
     /* comunidad */
@@ -252,51 +252,48 @@
     .form-contact{
         width: 300px;
         }
-        
-        .contact-img {
+    .contact-img {
             background: url(../imagenes/contacto/contacto.png);
             width: 100%;
             height: 300px;
             background-size: cover;
-             }  
+     }  
     
         /*PIE DE PAGINA */
     
-    .pie-pagina .grupo1 .box p{
-        color: white;
-        margin-bottom: 0.5rem;
-        margin-left: 0rem;
-        line-height: 1rem; /*para separacion entre lineas en el textro parrafo*/
-        font-size: small;
+    .pie-pagina .grupo1 .box{
+        p{
+            color: white;
+            margin-bottom: 0.5rem;
+            margin-left: 0rem;
+            line-height: 1rem; /*para separacion entre lineas en el textro parrafo*/
+            font-size: small;
+        }
+
+        h2{
+            color: white;
+            width: 92px;
+            height: 52px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            font-size: 0.8rem;
+            padding-top: 1rem;
+        }
+        
         
     }
-    
-    .pie-pagina .grupo1 .box .red-social {
+    .red-social{
         list-style: none;
         margin-left: 0.5rem;
-    }
-    
-    .pie-pagina .grupo1 .box .red-social a{
-        text-decoration: none;
-        color: white;
-        font-size: 0.7rem;
-    
-    }
-    .red-social span{
-        padding-right: 0.2rem;
-        line-height: 1rem;
-    
-    }
-    /* como el h2 es hijo : toma tanto "sobre nosotros" como "siguenos" */
-    .pie-pagina .grupo1 .box h2 {
-        color: white;
-        width: 92px;
-        height: 52px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        font-size: 0.8rem;
-        padding-top: 1rem;
-    }
-    
-    
-    }
+         
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 0.7rem;
+        }  
+        span{
+            padding-right: 0.2rem;
+            line-height: 1rem;  
+        }      
+    }    
+}

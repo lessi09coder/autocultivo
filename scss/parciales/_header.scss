@@ -1,7 +1,7 @@
 
          /* ---- PARA EL HEADER ----*/
 
-         .h1 {
+        .h1 {
             background-color: #064635;
             color: #F4EEA9;
             font-size: 3rem;
@@ -19,20 +19,21 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 0 !important;
-        }
-        .ul a {
-            color: #F0BB62;
-            text-decoration: none;
-            margin: 1rem;
-            font-size: 1.5rem;
+
+            
+            a {
+                color: #F0BB62;
+                text-decoration: none;
+                margin: 1rem;
+                font-size: 1.5rem;
+
+                &:hover{
+                    color: white;
+
+                }
             }
-        
-        
-        /* a:hover es para cuando pones el puntero arriba del link cambiar la propiedad*/
-        .ul a:hover {
-            color: white;
+
         }
-        /* para el nombre de la pagina "WELCOME"*/
         .wel {
             font-size: 30px;
             color: black;
@@ -42,4 +43,5 @@
             align-items: center;
         }
         
+       
         

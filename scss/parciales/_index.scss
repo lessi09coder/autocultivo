@@ -1,60 +1,49 @@
      /* ---- INDEX ---- */
-
-     
-     .sombra {
+    
+    .sombra {
         margin: 15px;
+
+        article{
+            margin: 0.5rem;
         }
+        h3{
+            background: linear-gradient(to right, rgb(81, 146, 89), white);
+            font-size: 1.7rem;
+            margin-bottom: 0.5rem;
+
+            &:hover{
+                box-shadow: 0 0 10px #519259, 0 0 30px #064635;
+                background: #519259;
+                color: #F4EEA9;
+            }        
+        }
+        p{
+            color: #000000;
+            margin-bottom: 0 ;
+            text-indent: 1rem; /*para darle sangria*/
+            font-size: 1.5rem;
+            font-weight: 600; /*para que se lea mejor grosor de letra*/
+            background-color: rgba(244, 238, 169, 0.75);
+        }
+        img{
+            border-radius: 1rem ;
+            border: solid black 2px;
+            width:95%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
     .efecto1 {
         color: white; 
-        background-color: rgba(0, 0, 0 , 0.5);    
-    } 
-    .efecto1:hover {
-       box-shadow: 0 0 10px #900cb1, 0 0 30px #310346;
-       text-decoration: underline;
-    }
-    /* para el INDEX y las noticias */
-    .sombra article {
-        margin: 0.5rem;
-    }
-    
-    /* .sombra div {
-        display: flex;
-    } */
-    
-    .sombra h3 {
-        /* background-color: rgb(81, 146, 89 , 0.7); pasamos a gradiente para ver como queda*/
-        background: linear-gradient(to right, rgb(81, 146, 89), white);
-        font-size: 1.7rem;
-        margin-bottom: 0.5rem;
-    }
-    .sombra h3:hover {
-        box-shadow: 0 0 10px #519259, 0 0 30px #064635;
-        background: #519259;
-        color: #F4EEA9;
-    }
-    .sombra p{
-        color: #000000;
-        margin-bottom: 0 ;
-        text-indent: 1rem; /*para darle sangria*/
-        font-size: 1.5rem;
-        font-weight: 600; /*para que se lea mejor grosor de letra*/
-        background-color: rgba(244, 238, 169, 0.75);
-     } 
-    
-     /* .parrafo-columnas {
-        flex-direction: column;
+        background-color: rgba(0, 0, 0 , 0.5);
         
-    }  */
-    
-    /*  ****    */
-    .sombra img {
-        border-radius: 1rem ;
-        border: solid black 2px;
-        width:95%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
+        &:hover{
+            box-shadow: 0 0 10px #900cb1, 0 0 30px #310346;
+            text-decoration: underline;
+        }
+    } 
+  
     /* boton para ir a enlace externo */
     .button__margin {
         margin: 40px 0px;
@@ -69,12 +58,11 @@
         border: 3px solid #064635;
         background-color: #F0BB62;
         position: relative;
-        }
-        .button:hover {
+
+        &:hover{
             color: blueviolet;
         }
-    .button::before,
-    .button::after {
+        &::before, &::after {
             content: "";
             position: absolute;
             width: 40px;
@@ -82,23 +70,22 @@
             border: inherit;
             transition: all 0.5s;
         }
-    .button::before {
+        &::before{
             top: -15px;
             left: -15px;
             border-width: 3px 0 0 3px;
-    
         }
-    .button::after {
+        &::after{
             bottom: -15px;
             right: -15px;
             border-width: 0 3px 3px 0;
-            
         }
-    .button:hover::before,
-    .button:hover::after {
-            width: calc(100% + 27px);
-            height: calc(100% + 27px);
-            color: white;
-            }
+        &:hover::before, &:hover::after {
+                width: calc(100% + 27px);
+                height: calc(100% + 27px);
+                color: white;
+        }
+}
+   
     
     

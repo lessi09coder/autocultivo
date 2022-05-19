@@ -1,6 +1,6 @@
       /* ---- GUIAS DE CULTIVO ---- */
 
-      .grid-card {
+.grid-card {
         width: auto;
         margin: 10px;    
         display: grid;
@@ -9,9 +9,9 @@
         row-gap: 15px;
         justify-items: center;
         align-items: center;
-        }
+}      
         
-    .card {
+.card {
         width: 300px;
         display: grid;
         grid-template-columns: auto;
@@ -22,77 +22,80 @@
         background: rgb(148, 146, 146);
         box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
         text-align: center;
-           }
-           .card:hover {
+
+        &:hover{
             box-shadow: 0 0 35px #064635;
         }
-    .card-image {
-        grid-area: image;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        &-image {
+            grid-area: image;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
         }
-    .img1 {
-        background: url(../imagenes/image-guiacard/abono-organico.jpg);
-        background-size: cover;
+        &-text{
+            grid-area: text;
+            margin: 25px;
+            line-height: 1.7rem;
+
+            .date {
+                color: rgb(0, 0, 0);
+                font-size: 13px;
+            }
+            p {
+                color: black;
+                font-size: 1rem;
+                font-weight: 300;
+                line-height: 1rem; 
+                margin-top: 0.2rem;
+            }
+            h2{
+                margin-top: 0px;
+                font-size: 28px;
+            }            
+        }
+        &-stats{
+            grid-area: stats;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background:#519259;
+
+            .stat {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 10px;
+                color: white;
+            }
+            .type {
+                font-size: 11px;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+            .value{
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
     }
-    
-    .img2 {
-        background: url(../imagenes/image-guiacard/ph-ec.jpg);
-        background-size: cover;
-      
+
+    .img{
+        &1 {
+            background: url(../imagenes/image-guiacard/abono-organico.jpg);
+            background-size: cover;
+        }
+        &2{
+            background: url(../imagenes/image-guiacard/ph-ec.jpg);
+            background-size: cover;
+        }
+        &3{
+            background: url(../imagenes/image-guiacard/Defoliation.jpg);
+            background-size: cover; 
+        }
     }
-    .img3 {
-        background: url(../imagenes/image-guiacard/Defoliation.jpg);
-        background-size: cover;
-    }
-    
-    
-    .card-text {
-        grid-area: text;
-        margin: 25px;
-        line-height: 1.7rem;
-    }
-    .card-text .date {
-        color: rgb(0, 0, 0);
-        font-size: 13px;
-    }
-    .card-text p {
-        color: black;
-        font-size: 1rem;
-        font-weight: 300;
-        line-height: 1rem; 
-        margin-top: 0.2rem;
-    }
-    .card-text h2 {
-        margin-top: 0px;
-        font-size: 28px;
-    }
-    .card-stats {
-        grid-area: stats;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        background:#519259;
-    }
-    .card-stats .stat {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 10px;
-        color: white;
-    }
-    .card-stats .type {
-        font-size: 11px;
-        font-weight: 300;
-        text-transform: uppercase;
-    }
-    .card-stats .value {
-        font-size: 22px;
-        font-weight: 500;
-    }
+   
     /*guias animaciones*/
     
     .flip-in-hor-bottom div {
