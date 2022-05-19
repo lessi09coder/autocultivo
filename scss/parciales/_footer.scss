@@ -3,77 +3,72 @@
 .pie-pagina {
     width: 100%;
     background-color: #064635;
-}
-            
-            
-            .pie-pagina .grupo1 {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-self: flex-end;
-            }
-            .pie-pagina .grupo1 .box {
-                justify-content: center;
-                justify-items: center;
-                width: 300px;
-            }
-            
-            
-            .pie-pagina .grupo1 .box figure {
+    
+    
+    
+    & .grupo1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+
+        & .box{
+            justify-content: center;
+            justify-items: center;
+            width: 300px;
+
+            figure{
                 width: 100%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 padding: 5px 5px ;
+
+                img{
+                    width: 120px;
+                    border-radius: 50%;
+                }
+                
             }
-            
-            .pie-pagina .grupo1 .box figure img{
-                width: 120px;
-                border-radius: 50%;
-            }
-            
-            
-            /* PIE DE PAGINA */
-            /* como el h2 es hijo : toma tanto "sobre nosotros" como "siguenos" */
-            .pie-pagina .grupo1 .box h2 {
+            h2{
                 color: white;
                 margin-bottom: 25px;
                 margin-left: 15px;
                 font-size: 25px;
                 padding-top: 1rem;
             }
-            
-            .pie-pagina .grupo1 .box p{
+            p{
                 color: white;
                 margin-bottom: 1rem;
                 margin-left: 1rem;
-                line-height: 1.5rem; /*para separacion entre lineas en el textro parrafo*/
+                line-height: 1.5rem; 
             }
-            
-            .pie-pagina .grupo1 .box .red-social {
+            & .red-social {
                 list-style: none;
                 margin-left: 1rem;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover{
+                        box-shadow: 0 0 15px white;
+                        background-color: #F4EEA9;
+                        color: #064635;
+                    }
+                }
+                span{
+                    padding-right: 1rem;
+                    line-height: 1.5rem;
+                }                
             }
-            
-            .pie-pagina .grupo1 .box .red-social a{
-                text-decoration: none;
-                color: white;
-            
-            
-            }
-            .pie-pagina .grupo1 .box .red-social a:hover{
-                box-shadow: 0 0 15px white;
-                background-color: #F4EEA9;
-                color: #064635;
-            }
-            
-            .red-social span{
-                padding-right: 1rem;
-                line-height: 1.5rem;
-            
-            }
-            .pie-pagina .grupo2 {
-                color: white;
-                margin-top: 2px;
-            }
+        }        
+    }
+    & .grupo2{
+        color: white;
+        margin-top: 2px;
+    }      
+}
+
+

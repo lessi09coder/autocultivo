@@ -97,8 +97,6 @@ body {
   border-radius: 50%;
 }
 
-/* PIE DE PAGINA */
-/* como el h2 es hijo : toma tanto "sobre nosotros" como "siguenos" */
 .pie-pagina .grupo1 .box h2 {
   color: white;
   margin-bottom: 25px;
@@ -112,7 +110,6 @@ body {
   margin-bottom: 1rem;
   margin-left: 1rem;
   line-height: 1.5rem;
-  /*para separacion entre lineas en el textro parrafo*/
 }
 
 .pie-pagina .grupo1 .box .red-social {
@@ -131,7 +128,7 @@ body {
   color: #064635;
 }
 
-.red-social span {
+.pie-pagina .grupo1 .box .red-social span {
   padding-right: 1rem;
   line-height: 1.5rem;
 }
