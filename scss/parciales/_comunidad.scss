@@ -1,6 +1,6 @@
 /* COMUNIDAD */
 .link1:hover{
-    color: white;
+    color: $blanco;
 }
 
 .amigos {
@@ -15,7 +15,7 @@
     &--grow {
         grid-area: ele1;   
         margin-top: 15px; 
-        background-color: #F0BB62;
+        background-color: $naranja;
         width: 100%;
         text-align: start;    
         display: flex; 
@@ -39,21 +39,21 @@
         background-size: cover;
         background-position: center;
         border-radius: 15px;
-        box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+        box-shadow: 5px 5px 15px rgba($negro,0.9);
     }
     &--elpityseeds {
         background-image: url(../imagenes/comunidad/pityseedslogo.png);
         background-size: cover;
         background-position: center;
         border-radius: 15px;
-        box-shadow: 5px 5px 15px rgba(0,0,0,0.9); 
+        box-shadow: 5px 5px 15px rgba($negro,0.9); 
     }
     &--cannabunker{
         background-image: url(../imagenes/comunidad/cannabunkerlogo.png);
         background-size: cover;
         background-position: center;
         border-radius: 15px;
-        box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+        box-shadow: 5px 5px 15px rgba($negro,0.9);
     }
 }
 
@@ -69,7 +69,7 @@
     }
     a{
         text-decoration: none;
-        color: #064635;
+        color: $verdoso;
     }
     p{
         font-size: 2rem;
@@ -80,7 +80,7 @@
     background: url(../imagenes/comunidad/growthc.jpg);
     background-size: cover;
     border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    box-shadow: 5px 5px 15px rgba($negro,0.9);
     width: 500px;
     height: auto;
 
@@ -96,7 +96,7 @@
     
     a{ 
         text-decoration: none;        
-        color: #064635;
+        color: $violeta;
     }
 }
    

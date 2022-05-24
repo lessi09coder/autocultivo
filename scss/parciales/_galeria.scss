@@ -7,7 +7,7 @@
     --bs-gutter-x:0 !important;
     margin-bottom: 1.5rem; 
     h2 {
-        color:#000000;
+        color:$negro;
         text-decoration:none;
         text-align:center ; 
         background-size: contain;
@@ -15,21 +15,21 @@
         margin: 1rem;
     }
     div {
-        overflow: hidden;          
+        overflow: hidden;     
     }
     div h2 {
         position: absolute;
         top: 0;
         left: 50%;
         transform: translate(-50%);
-        background-color: rgba(0, 0, 0 , 0.5);
-        color: white;
+        background-color: rgba($negro, 0.5);
+        color: $blanco;
     }
     div img{
         width: 100%;
         height: 300px;
         object-fit: cover;
-        border: 3px solid #F4EEA9;
+        border: 3px solid $amarillo;
         
         &:hover{
             transition: 2s;
@@ -43,9 +43,9 @@
 .modalTitulo{
     position: absolute;
     top: 100%;
-    color: white;
+    color: $blanco;
     display: block;
-    background-color: rgba(0, 0, 0 , 0.7);
+    background-color: rgba($negro, 0.7);
     font-size: 2rem;
     text-align: center;            
 }

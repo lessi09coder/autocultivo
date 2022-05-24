@@ -3,9 +3,10 @@
 .form {
     display: flex;
     justify-content: center;
+    margin: 15px 0;
 
     &-contact {
-        background-color: rgba(139, 36, 170, 0.9);
+        background-color: rgba($violeta, 0.9);
         width: 400px;
         box-shadow: 2px 1px 5px ;
         padding: 10px;
@@ -19,14 +20,14 @@
             width: 100%;
             padding: 5px;
             margin-bottom: 5px;
-            color: white;
+            color: $blanco;
             font-weight: 900;
         }
         input, textarea{
             border: none;
-            border-bottom: 2px solid #000000;
+            border-bottom: 2px solid $negro;
             font-size: 1.5rem;
-            color: #000000;
+            color: $negro;
         }
         &-img{
             background: url(../imagenes/contacto/contacto.png);
@@ -37,7 +38,7 @@
         }
         &-text p{
             font-size: 2.5rem;
-            background-color: #519259;
+            background-color: $verde;
         }
     }
 

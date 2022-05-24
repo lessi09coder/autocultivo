@@ -19,12 +19,12 @@
         grid-template-areas: "image" "text" "stats";
         column-gap: 15px;
         border-radius: 18px;
-        background: rgb(148, 146, 146);
-        box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+        background: rgba($amarillo,0.8);
+        box-shadow: 5px 5px 15px rgba($negro,0.9);
         text-align: center;
 
         &:hover{
-            box-shadow: 0 0 35px #064635;
+            box-shadow: 0 0 35px $verdoso;
         }
         &-image {
             grid-area: image;
@@ -37,11 +37,11 @@
             line-height: 1.7rem;
 
             .date {
-                color: rgb(0, 0, 0);
+                color: $negro;
                 font-size: 13px;
             }
             p {
-                color: black;
+                color: $negro;
                 font-size: 1rem;
                 font-weight: 300;
                 line-height: 1rem; 
@@ -59,7 +59,7 @@
             grid-template-rows: 1fr;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
-            background:#519259;
+            background: $verde;
 
             .stat {
                 display: flex;
@@ -67,7 +67,7 @@
                 justify-content: center;
                 flex-direction: column;
                 padding: 10px;
-                color: white;
+                color: $blanco;
             }
             .type {
                 font-size: 11px;

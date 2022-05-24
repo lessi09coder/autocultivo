@@ -2,7 +2,7 @@
 
 .pie-pagina {
     width: 100%;
-    background-color: #064635;
+    background-color: $verdoso;
     
     
     
@@ -32,14 +32,14 @@
                 
             }
             h2{
-                color: white;
+                color: $blanco;
                 margin-bottom: 25px;
                 margin-left: 15px;
                 font-size: 25px;
                 padding-top: 1rem;
             }
             p{
-                color: white;
+                color: $blanco;
                 margin-bottom: 1rem;
                 margin-left: 1rem;
                 line-height: 1.5rem; 
@@ -50,12 +50,12 @@
 
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: $blanco;
 
                     &:hover{
-                        box-shadow: 0 0 15px white;
-                        background-color: #F4EEA9;
-                        color: #064635;
+                        box-shadow: 0 0 15px $blanco;
+                        background-color: $amarillo;
+                        color: $verdoso;
                     }
                 }
                 span{
@@ -66,7 +66,7 @@
         }        
     }
     & .grupo2{
-        color: white;
+        color: $blanco;
         margin-top: 2px;
     }      
 }

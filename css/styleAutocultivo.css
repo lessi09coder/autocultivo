@@ -5,10 +5,6 @@
 }
 
 /* paleta de colores */
-.paletadecolores {
-  color: #064635 #519259 #F0BB62 #F4EEA9;
-}
-
 /* --- BODY --- */
 body {
   font-family: 'Mukta', sans-serif !important;
@@ -160,7 +156,7 @@ body {
 }
 
 .sombra p {
-  color: #000000;
+  color: black;
   margin-bottom: 0;
   text-indent: 1rem;
   /*para darle sangria*/
@@ -172,7 +168,7 @@ body {
 
 .sombra img {
   border-radius: 1rem;
-  border: solid black 2px;
+  border: solid white 2px;
   width: 95%;
   height: 100%;
   object-fit: cover;
@@ -200,13 +196,13 @@ body {
   font-weight: bold;
   /*darle negrita*/
   padding: 10px 25px;
-  border: 3px solid #064635;
+  border: 3px solid black;
   background-color: #F0BB62;
   position: relative;
 }
 
 .button:hover {
-  color: blueviolet;
+  color: #900cb1;
 }
 
 .button::before, .button::after {
@@ -233,7 +229,6 @@ body {
 .button:hover::before, .button:hover::after {
   width: calc(100% + 27px);
   height: calc(100% + 27px);
-  color: white;
 }
 
 /* ---- GUIAS DE CULTIVO ---- */
@@ -256,7 +251,7 @@ body {
   grid-template-areas: "image" "text" "stats";
   column-gap: 15px;
   border-radius: 18px;
-  background: #949292;
+  background: rgba(244, 238, 169, 0.8);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
 }
@@ -364,7 +359,7 @@ body {
 }
 
 .galeria h2 {
-  color: #000000;
+  color: black;
   text-decoration: none;
   text-align: center;
   background-size: contain;
@@ -412,10 +407,11 @@ body {
 .form {
   display: flex;
   justify-content: center;
+  margin: 15px 0;
 }
 
 .form-contact {
-  background-color: rgba(139, 36, 170, 0.9);
+  background-color: rgba(144, 12, 177, 0.9);
   width: 400px;
   box-shadow: 2px 1px 5px;
   padding: 10px;
@@ -432,9 +428,9 @@ body {
 
 .contact input, .contact textarea {
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid black;
   font-size: 1.5rem;
-  color: #000000;
+  color: black;
 }
 
 .contact-img {
@@ -553,7 +549,7 @@ body {
 
 .jamcomunidad a {
   text-decoration: none;
-  color: #064635;
+  color: #900cb1;
 }
 
 @media screen and (max-width: 1200px) {

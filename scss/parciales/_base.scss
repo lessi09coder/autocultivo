@@ -3,15 +3,28 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 /* paleta de colores */
-.paletadecolores{
-  color:
-  #064635
-  #519259
-  #F0BB62
-  #F4EEA9
-}
+
+$paleta:(
+  verdoso: #064635,
+  verde:#519259,
+  naranja:#F0BB62,
+  amarillo:#F4EEA9,
+  violeta:#900cb1,
+  morado:#310346,
+  blanco: white,
+  negro: black
+);
+
+$verdoso: map-get($paleta, verdoso);
+$verde: map-get($paleta,verde);
+$naranja: map-get($paleta,naranja);
+$amarillo: map-get($paleta,amarillo);
+$violeta: map-get($paleta,violeta);
+$morado: map-get($paleta,morado);
+$blanco: map-get($paleta,blanco);
+$negro: map-get($paleta,negro);
+
 
       /* --- BODY --- */
 
