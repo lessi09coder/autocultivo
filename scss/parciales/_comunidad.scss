@@ -11,6 +11,7 @@
                          " ele2 ele3 ele4";
     margin: 15px 25px ;
     min-height: 900px;  
+    color: $blanco;
     
     &--grow {
         grid-area: ele1;   
@@ -26,7 +27,7 @@
         border-bottom-right-radius: 15px;
 
         h3{
-            font-size: 4rem;
+            font-size: 4rem;            
         }
 
         &-iframe iframe {  
@@ -34,26 +35,38 @@
             height: 100%;
         }       
     }
-    &--weedword{
+    &--weedword{        
         background-image: url(../imagenes/comunidad/weedwordlogo_auto_x2.jpg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px;
-        box-shadow: 5px 5px 15px rgba($negro,0.9);
+        @include backgimg (cover, center, 15px, 5px 5px 15px rgba($negro, 0.9));
+        padding: 15px;
+        
+        h3{
+            display: inline;
+            background: rgba($morado,0.7 );
+            border-radius: 0.5rem;
+        }        
     }
     &--elpityseeds {
         background-image: url(../imagenes/comunidad/pityseedslogo.png);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px;
-        box-shadow: 5px 5px 15px rgba($negro,0.9); 
+        @include backgimg (cover, center, 15px, 5px 5px 15px rgba($negro, 0.9));
+        padding: 15px;   
+        
+        h3{
+            display: inline;
+            background: rgba($morado,0.7 );
+            border-radius: 0.5rem;
+        }     
     }
     &--cannabunker{
         background-image: url(../imagenes/comunidad/cannabunkerlogo.png);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px;
-        box-shadow: 5px 5px 15px rgba($negro,0.9);
+        @include backgimg (fill, center, 15px, 5px 5px 15px rgba($negro, 0.9));
+        padding: 15px;
+
+        h3{
+            display: inline;
+            background: rgba($morado,0.7 );
+            border-radius: 0.5rem;
+        }     
     }
 }
 
@@ -78,9 +91,8 @@
 
 .comunidad_img1 {
     background: url(../imagenes/comunidad/growthc.jpg);
-    background-size: cover;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba($negro,0.9);
+    @include backgimg (cover, center, 15px, 5px 5px 15px rgba($negro, 0.9));
+    
     width: 500px;
     height: auto;
 
@@ -94,9 +106,16 @@
     font-size: 3rem;   
     list-style: none;   
     
+    
     a{ 
         text-decoration: none;        
         color: $violeta;
+        margin: 10px;
+        
+        span{
+            background: rgba($negro,0.3);
+            border-radius: 1rem;
+        }
     }
 }
    

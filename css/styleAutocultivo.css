@@ -458,6 +458,7 @@ body {
   grid-template-areas: " ele1 ele1 ele1" " ele2 ele3 ele4";
   margin: 15px 25px;
   min-height: 900px;
+  color: white;
 }
 
 .amigos--grow {
@@ -489,6 +490,13 @@ body {
   background-position: center;
   border-radius: 15px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  padding: 15px;
+}
+
+.amigos--weedword h3 {
+  display: inline;
+  background: rgba(49, 3, 70, 0.7);
+  border-radius: 0.5rem;
 }
 
 .amigos--elpityseeds {
@@ -497,14 +505,28 @@ body {
   background-position: center;
   border-radius: 15px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  padding: 15px;
+}
+
+.amigos--elpityseeds h3 {
+  display: inline;
+  background: rgba(49, 3, 70, 0.7);
+  border-radius: 0.5rem;
 }
 
 .amigos--cannabunker {
   background-image: url(../imagenes/comunidad/cannabunkerlogo.png);
-  background-size: cover;
+  background-size: fill;
   background-position: center;
   border-radius: 15px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  padding: 15px;
+}
+
+.amigos--cannabunker h3 {
+  display: inline;
+  background: rgba(49, 3, 70, 0.7);
+  border-radius: 0.5rem;
 }
 
 .red-social-comunidad {
@@ -531,6 +553,7 @@ body {
 .comunidad_img1 {
   background: url(../imagenes/comunidad/growthc.jpg);
   background-size: cover;
+  background-position: center;
   border-radius: 15px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   width: 500px;
@@ -550,6 +573,12 @@ body {
 .jamcomunidad a {
   text-decoration: none;
   color: #900cb1;
+  margin: 10px;
+}
+
+.jamcomunidad a span {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
 }
 
 @media screen and (max-width: 1200px) {

@@ -41,3 +41,19 @@ background-size: cover;
 min-height: 100%;
 flex-wrap: wrap;
 }
+
+@mixin dimensiones ($marg:0, $padd:0, $wid:100%, $heig:100%)
+{
+  margin: $marg;
+  padding: $padd;
+  width: $wid;
+  height: $heig;
+}
+
+@mixin backgimg ($backgsize:cover, $backgposition:center, $boradius:0px, $boxsha:0px 0px 5px)
+{
+  background-size: $backgsize;
+  background-position: $backgposition;
+  border-radius: $boradius;
+  box-shadow: $boxsha;
+}
