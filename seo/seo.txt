@@ -1,0 +1,10 @@
+Seo: 
+# Utilice un titulo para cada page correspondiente al tema.
+# Todo el proyecto es responsive.
+# Se etiqueto todo de forma correcta en el html.
+# Se uso SCSS para mejor optimizar lines de codigo.
+# Se coloco KEYWORDS acorde al tema principal del proyecto para mejorar la busqueda.
+# Tiene una descripcion para el motor de busqueda.
+# Se usaron @mixin , @map-get y @extend para optimizar codigo.
+# (falta optimizar imagenes en kbs).
+# Toda la informacion esta obtenida de fuentes confiables y no tiene texto LOREM.
