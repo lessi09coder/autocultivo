@@ -5,10 +5,6 @@ Seo:
 # Se uso SCSS para mejor optimizar lines de codigo.
 # Se coloco KEYWORDS acorde al tema principal del proyecto para mejorar la busqueda.
 # Tiene una descripcion para el motor de busqueda.
-# Se usaron @mixin , @map-get y @extend para optimizar codigo.
+# Se usaron @mixin, @map-get y @extend para optimizar codigo.
 # Toda la informacion esta obtenida de fuentes confiables y no tiene texto LOREM.
-
-
-
-
-# (falta optimizar imagenes en kbs). se cambiaron las imagenes, se re subieron a github?
+# se optimizaron las imagenes para una carga mas rapida.
