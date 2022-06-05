@@ -2,6 +2,9 @@
     
     .sombra {
         margin: 15px;
+        &:hover{
+            box-shadow: 0 0 10px $violeta, 0 0 30px $morado;            
+        }
 
         article{
             margin: 0.5rem;
@@ -38,17 +41,13 @@
         color: $blanco; 
         background-color: rgba($negro, 0.5);
         
-        &:hover{
-            box-shadow: 0 0 10px $violeta, 0 0 30px $morado;
+        &:hover{            
             text-decoration: underline;
         }
     } 
   
     /* boton para ir a enlace externo */
-    .button__margin {
-        margin: 40px 0px;
-    }
-    
+       
     .button {
         text-decoration: none;
         font-size: 1.5rem;
@@ -57,7 +56,11 @@
         padding: 10px 25px;
         border: 3px solid $negro;
         background-color: $naranja;
-        position: relative;
+        position: relative;       
+
+        &__margin {
+            margin: 40px 0px;
+        }
 
         &:hover{
             color: $violeta;

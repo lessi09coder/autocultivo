@@ -1,13 +1,11 @@
 
          /* ---- PARA EL HEADER ----*/
-        
-        .h1 {
-            background-color: $verdoso;
-            color: $amarillo;
-            font-size: 3rem;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 0 !important;
+              
+        header{
+            position: sticky;
+            top: 0; 
+            z-index: 100;    
+            border-bottom: 3px solid $amarillo;       
         }
         .ul {
             display: flex;
@@ -15,11 +13,13 @@
             background-color: $verde;
             list-style: none;
             width: auto;
-            height: 40px;
+            height: 60px;
             justify-content: center;
             align-items: center;
-            margin-bottom: 0 !important;            
+            margin-bottom: 0 !important;  
             
+
+                       
             a {
                 color: $naranja;
                 text-decoration: none;
@@ -39,7 +39,7 @@
             background-color: $amarillo;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center;            
         }
         
        

@@ -58,7 +58,11 @@
         }
     }
     
-    /* crar una media query max widh 1249px */
+   /* contacto */ 
+
+   .contact-text p {
+        font-size: 1.5rem;
+   }
     
     @media screen and (max-width: 1023px) {
         /*EN TABLET*/
@@ -111,7 +115,10 @@
         }
     
         /* para la galeria */
-    
+
+        .modalTitulo{
+            font-size: 1.5rem;                     
+        }
         
       
     /*para contacto*/
@@ -191,10 +198,13 @@
             flex-direction: column;
         }
     
+        .modalTitulo{
+            font-size: 1rem;                     
+        }
+        
         /*para contacto*/
     .contacto-text p{
-        font-size: 1rem;
-        
+        font-size: 1rem;        
     }
     
        /*PIE DE PAGINA */
@@ -257,7 +267,12 @@
             width: 100%;
             height: 300px;
             background-size: cover;
+            background-position: center;
      }  
+
+    .contact-text p {
+        font-size: 0.8rem;
+}
     
         /*PIE DE PAGINA */
     

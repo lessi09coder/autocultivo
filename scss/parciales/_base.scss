@@ -36,10 +36,7 @@ background-position: center;
 /* background-attachment es para que la imagen se mueva o quede fija cuando nos movemos por la pagina */
 background-attachment: fixed;
 background-size: cover;
-
-/*para que el footer sea stick necesitamos que el body tenga altura minima (esto es experimental al 21/4)*/
-min-height: 100%;
-flex-wrap: wrap;
+min-height: 100vh;
 }
 
 @mixin dimensiones ($marg:0, $padd:0, $wid:100%, $heig:100%)

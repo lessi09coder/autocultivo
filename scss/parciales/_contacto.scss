@@ -7,7 +7,7 @@
 
     &-contact {
         background-color: rgba($violeta, 0.9);
-        width: 400px;
+        width: 420px;
         box-shadow: 2px 1px 5px ;
         padding: 10px;
         }
@@ -33,7 +33,7 @@
             background: url(../imagenes/contacto/contacto.png);
             width: 100%;
             height: 200px;
-            background-size: contain;
+            background-size: contain;            
             border-radius: 30px;
         }
         &-text p{

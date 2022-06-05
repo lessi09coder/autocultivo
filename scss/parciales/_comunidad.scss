@@ -11,7 +11,7 @@
                          " ele2 ele3 ele4";
     margin: 15px 25px ;
     min-height: 900px;  
-    color: $blanco;
+    color: $morado;
     
     &--grow {
         grid-area: ele1;   
@@ -28,6 +28,13 @@
 
         h3{
             font-size: 4rem;            
+        }
+
+        &-contacto{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-right: 5px;
         }
 
         &-iframe iframe {  
@@ -61,6 +68,7 @@
         background-image: url(../imagenes/comunidad/cannabunkerlogo.png);
         @include backgimg (fill, center, 15px, 5px 5px 15px rgba($negro, 0.9));
         padding: 15px;
+        margin-bottom: 10px;
 
         h3{
             display: inline;
@@ -74,18 +82,24 @@
     display: flex;
     flex: auto;
     justify-content: space-around;
-    padding: 0 15px;
+    padding-left: 10px;    
 
     ul{
         align-items: center;
         list-style: none;    
+        
     }
     a{
         text-decoration: none;
-        color: $verdoso;
+        color: $violeta;
+        
+        span{
+            background: rgba($morado,0.3 );      
+        border-radius: 0.5rem;  
+        }
     }
     p{
-        font-size: 2rem;
+        font-size: 2rem;       
     }
 }
 

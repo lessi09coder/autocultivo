@@ -13,19 +13,15 @@ body {
   /* background-attachment es para que la imagen se mueva o quede fija cuando nos movemos por la pagina */
   background-attachment: fixed;
   background-size: cover;
-  /*para que el footer sea stick necesitamos que el body tenga altura minima (esto es experimental al 21/4)*/
-  min-height: 100%;
-  flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 /* ---- PARA EL HEADER ----*/
-.h1 {
-  background-color: #064635;
-  color: #F4EEA9;
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0 !important;
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 3px solid #F4EEA9;
 }
 
 .ul {
@@ -34,7 +30,7 @@ body {
   background-color: #519259;
   list-style: none;
   width: auto;
-  height: 40px;
+  height: 60px;
   justify-content: center;
   align-items: center;
   margin-bottom: 0 !important;
@@ -61,6 +57,10 @@ body {
 }
 
 /* ---- PIE DE PAGINA ---- */
+footer {
+  margin-top: auto;
+}
+
 .pie-pagina {
   width: 100%;
   background-color: #064635;
@@ -139,6 +139,10 @@ body {
   margin: 15px;
 }
 
+.sombra:hover {
+  box-shadow: 0 0 10px #900cb1, 0 0 30px #310346;
+}
+
 .sombra article {
   margin: 0.5rem;
 }
@@ -180,15 +184,10 @@ body {
 }
 
 .efecto1:hover {
-  box-shadow: 0 0 10px #900cb1, 0 0 30px #310346;
   text-decoration: underline;
 }
 
 /* boton para ir a enlace externo */
-.button__margin {
-  margin: 40px 0px;
-}
-
 .button {
   text-decoration: none;
   font-size: 1.5rem;
@@ -199,6 +198,10 @@ body {
   border: 3px solid black;
   background-color: #F0BB62;
   position: relative;
+}
+
+.button__margin {
+  margin: 40px 0px;
 }
 
 .button:hover {
@@ -365,6 +368,7 @@ body {
   background-size: contain;
   border-radius: 0.5rem;
   margin: 1rem;
+  z-index: 10;
 }
 
 .galeria div {
@@ -412,7 +416,7 @@ body {
 
 .form-contact {
   background-color: rgba(144, 12, 177, 0.9);
-  width: 400px;
+  width: 420px;
   box-shadow: 2px 1px 5px;
   padding: 10px;
 }
@@ -458,7 +462,7 @@ body {
   grid-template-areas: " ele1 ele1 ele1" " ele2 ele3 ele4";
   margin: 15px 25px;
   min-height: 900px;
-  color: white;
+  color: #310346;
 }
 
 .amigos--grow {
@@ -477,6 +481,13 @@ body {
 
 .amigos--grow h3 {
   font-size: 4rem;
+}
+
+.amigos--grow-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 5px;
 }
 
 .amigos--grow-iframe iframe {
@@ -521,6 +532,7 @@ body {
   border-radius: 15px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   padding: 15px;
+  margin-bottom: 10px;
 }
 
 .amigos--cannabunker h3 {
@@ -533,7 +545,7 @@ body {
   display: flex;
   flex: auto;
   justify-content: space-around;
-  padding: 0 15px;
+  padding-left: 10px;
 }
 
 .red-social-comunidad ul {
@@ -543,7 +555,12 @@ body {
 
 .red-social-comunidad a {
   text-decoration: none;
-  color: #064635;
+  color: #900cb1;
+}
+
+.red-social-comunidad a span {
+  background: rgba(49, 3, 70, 0.3);
+  border-radius: 0.5rem;
 }
 
 .red-social-comunidad p {
@@ -631,7 +648,11 @@ body {
   }
 }
 
-/* crar una media query max widh 1249px */
+/* contacto */
+.contact-text p {
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 1023px) {
   /*EN TABLET*/
   body {
@@ -675,6 +696,9 @@ body {
     align-items: center;
   }
   /* para la galeria */
+  .modalTitulo {
+    font-size: 1.5rem;
+  }
   /*para contacto*/
   .contacto-text p {
     font-size: 2rem;
@@ -735,6 +759,9 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .modalTitulo {
+    font-size: 1rem;
+  }
   /*para contacto*/
   .contacto-text p {
     font-size: 1rem;
@@ -791,6 +818,10 @@ body {
     width: 100%;
     height: 300px;
     background-size: cover;
+    background-position: center;
+  }
+  .contact-text p {
+    font-size: 0.8rem;
   }
   /*PIE DE PAGINA */
   .pie-pagina .grupo1 .box p {
