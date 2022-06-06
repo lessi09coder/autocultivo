@@ -463,7 +463,7 @@ footer {
   grid-template-areas: " ele1 ele1 ele1" " ele2 ele3 ele4";
   margin: 15px 25px;
   min-height: 900px;
-  color: #310346;
+  color: #900cb1;
 }
 
 .amigos--grow {
@@ -509,6 +509,7 @@ footer {
   display: inline;
   background: rgba(49, 3, 70, 0.7);
   border-radius: 0.5rem;
+  color: white;
 }
 
 .amigos--elpityseeds {
@@ -524,6 +525,7 @@ footer {
   display: inline;
   background: rgba(49, 3, 70, 0.7);
   border-radius: 0.5rem;
+  color: white;
 }
 
 .amigos--cannabunker {
@@ -540,6 +542,7 @@ footer {
   display: inline;
   background: rgba(49, 3, 70, 0.7);
   border-radius: 0.5rem;
+  color: white;
 }
 
 .red-social-comunidad {

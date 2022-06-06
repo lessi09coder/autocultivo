@@ -11,7 +11,7 @@
                          " ele2 ele3 ele4";
     margin: 15px 25px ;
     min-height: 900px;  
-    color: $morado;
+    color: $violeta;
     
     &--grow {
         grid-area: ele1;   
@@ -51,6 +51,7 @@
             display: inline;
             background: rgba($morado,0.7 );
             border-radius: 0.5rem;
+            color: $blanco;
         }        
     }
     &--elpityseeds {
@@ -62,6 +63,7 @@
             display: inline;
             background: rgba($morado,0.7 );
             border-radius: 0.5rem;
+            color: $blanco;
         }     
     }
     &--cannabunker{
@@ -74,6 +76,7 @@
             display: inline;
             background: rgba($morado,0.7 );
             border-radius: 0.5rem;
+            color: $blanco;
         }     
     }
 }
