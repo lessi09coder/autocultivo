@@ -168,6 +168,7 @@ footer {
   font-weight: 600;
   /*para que se lea mejor grosor de letra*/
   background-color: rgba(244, 238, 169, 0.75);
+  border-radius: 0 0 10px 0;
 }
 
 .sombra img {
